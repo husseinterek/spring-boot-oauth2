@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+    $.get("/user", function(data) {
+        $("#userDetails").html(data.userAuthentication.details.name);
+    });
+</script>
+</head>
+<body>
+
+	<div id="userDetails"> </div>
+
+</body>
+</html>
